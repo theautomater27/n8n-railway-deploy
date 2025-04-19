@@ -8,6 +8,3 @@ ENV N8N_BASIC_AUTH_PASSWORD=admin123
 ENV GENERIC_TIMEZONE=America/Chicago
 
 EXPOSE 5678
-
-# Start the n8n server
-CMD ["n8n"]
