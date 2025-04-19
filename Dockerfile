@@ -1,8 +1,10 @@
-FROM n8nio/n8n
+FROM n8nio/n8n:latest
 
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=admin123
+ENV GENERIC_TIMEZONE=America/Chicago
 
 EXPOSE 5678
-CMD ["n8n", "start"]
+
+CMD ["n8n"]
